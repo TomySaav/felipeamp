@@ -292,6 +292,24 @@
       allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </section>
 
+  <section id="cotizacion" style="margin-top:2.5rem;">
+        <h2>Solicita tu Cotización</h2>
+            <form action="https://formsubmit.co/saavintegral@gmail.com" method="POST" style="max-width:420px;margin:auto;display:flex;flex-direction:column;gap:1rem;background:#f7faff;padding:2rem 1.5rem;border-radius:16px;box-shadow:0 2px 12px #0072ff11;">
+                <input type="text" name="nombre" placeholder="Tu nombre" required style="padding:0.8rem;border-radius:8px;border:1.5px solid #b3d1ff;font-size:1rem;">
+                <input type="email" name="email" placeholder="Tu correo" required style="padding:0.8rem;border-radius:8px;border:1.5px solid #b3d1ff;font-size:1rem;">
+                <input type="tel" name="telefono" placeholder="Teléfono" style="padding:0.8rem;border-radius:8px;border:1.5px solid #b3d1ff;font-size:1rem;">
+                <textarea name="mensaje" rows="4" placeholder="¿Qué necesitas cotizar?" required style="padding:0.8rem;border-radius:8px;border:1.5px solid #b3d1ff;font-size:1rem;"></textarea>
+                    <!-- Opcional: evitar spam -->
+                <input type="hidden" name="_captcha" value="true">
+                <button type="submit" style="background:linear-gradient(90deg,#00c6ff 0%,#0072ff 100%);color:#fff;border:none;padding:1rem;border-radius:10px;font-size:1.1rem;font-weight:bold;cursor:pointer;box-shadow:0 2px 8px #0072ff33;transition:background 0.2s,box-shadow 0.2s;letter-spacing:1px;">
+                        Enviar Cotización
+                </button>
+            </form>
+        <p style="text-align:center;font-size:1rem;color:#0072ff;margin-top:1rem;">
+            Te responderemos a la brevedad a tu correo.
+        </p>
+  </section>
+
   <!-- Botón flotante de WhatsApp -->
   <div class="whatsapp-float">
     <a href="https://wa.me/56912345678" target="_blank" rel="noopener">
@@ -308,17 +326,5 @@
       Sitio desarrollado con ❤️ y tecnología moderna.
     </p>
   </footer>
-
-  <script>
-    // Simulación de envío de formulario
-    function enviarFormulario(e) {
-      e.preventDefault();
-      document.querySelector('.contact-form').reset();
-      document.getElementById('mensaje-enviado').style.display = 'block';
-      setTimeout(() => {
-        document.getElementById('mensaje-enviado').style.display = 'none';
-      }, 3000);
-    }
-  </script>
 </body>
 </html>
